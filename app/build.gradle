@@ -41,21 +41,25 @@ android {
             dimension = 'price'
             applicationIdSuffix = '.free'
             versionNameSuffix = '-free'
+            manifestPlaceholders = [appTitle: "FreeApp"]
         }
         pro {
             dimension = 'price'
             applicationIdSuffix = '.pro'
             versionNameSuffix = '-pro'
+            manifestPlaceholders = [appTitle: 'ProApp']
         }
         child {
             dimension = 'age'
             applicationIdSuffix = '.child'
             versionNameSuffix = '-child'
+            manifestPlaceholders = [appTitle: 'ChildApp']
         }
         adult {
             dimension = 'age'
             applicationIdSuffix = '.adult'
             versionNameSuffix = '-adult'
+            manifestPlaceholders = [appTitle: 'AdultApp']
         }
     }
 
