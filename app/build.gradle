@@ -59,10 +59,20 @@ android {
         }
     }
 
+    // Change default configurations for sources sets
+    sourceSets {
+        adult {
+            java.srcDirs = ["src/adult/code"]
+            res.srcDirs = ["src/adult/resources"]
+            manifest.srcFile "src/adult/manifest/AndroidManifest.xml"
+        }
+    }
+
     compileOptions {
         sourceCompatibility = 1.8
         targetCompatibility = 1.8
     }
+
 }
 
 dependencies {
